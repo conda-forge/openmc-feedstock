@@ -5,7 +5,10 @@ language: generic
 
 os: osx
 
-
+env:
+  global:
+    # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
+    - secure: "UosydMAkcg5IErEZxjbHE76xurcwOnVQY2zIkMrE+M5pwRPgCdEj7qIFEqLgMYSqgUMqrKeUvySU0sg+XH5BJ5B6vyRADzq+7aQ08rk3yvNpuI5+OaqREfKGOSxn5kkxpXlypV7ENpJN/v4R01DAvx1oJH5UF6NUXbhBHFG4/yGIwq+ooQAXCvNLySNp0eD+a/NKtDjbzkScZftJS4sAktPYq+0unnshl3h9eizcy6GTE/7v+s3A6uWsa/LN+/Jk0uE9blf9/V1RMaUQqnuQmCmxjK4f0qDAH8BRdocHgC/MkiC/1RIDcc/GK3UOu1pvzaab3DQDviBKgvDvWVHICYd0UjpN+m2ldkdojN61jRIY/r/fYkGgEYBq4MV6VplSPb77yD67NAFT8neJpWOr6UrkAbe5jCEtB1oNv/ZD69C3gtQVyWL+D5gg/Y6L75snQUCWISN6hXCwo0XyrVl9ic5NMAi41ph3Ds+1M4BTlQXw0PCGhveLgRHG/SH5g2JbXi8wgVhN/gsXTCZNDz2bE2RhWwREo37qOA/TZYjJpWJc2/BojLOzOpe1zggM8mL2Ok8t2D7osYce80F7AdcjiBIgsMla34uPvCyl/5YEvVlP/hh1XV9QjyTy+gPLYDaLH6TABRFx5LtTsSOtyWtfDUlPg5hR/W2bUc+lCaO/Vlc="
 
 
 before_install:
