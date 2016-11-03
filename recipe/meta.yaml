@@ -26,10 +26,21 @@ requirements:
     - hdf5 1.8.17|1.8.17.*
     - git
     - mpich
+    - setuptools
+    - numpy >=1.9
+    - cython
   run:
     - mpich
     - libgfortran
     - hdf5 1.8.17|1.8.17.*
+    - python >=2.7
+    - six
+    - numpy >=1.9
+    - h5py <=2.5|>2.6.0
+    - scipy
+    - pandas
+    - matplotlib
+    - lxml
 
 test:
   commands:
