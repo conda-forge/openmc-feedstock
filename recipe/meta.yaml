@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   detect_binary_files_with_prefix: true
 
@@ -23,13 +23,13 @@ requirements:
     - cmake
     - pkg-config
     - gcc
-    - hdf5 1.8.17|1.8.17.*
+    - hdf5 1.8.18|1.8.18.*
     - git
     - mpich
   run:
     - mpich
     - libgfortran
-    - hdf5 1.8.17|1.8.17.*
+    - hdf5 1.8.18|1.8.18.*
 
 test:
   commands:
