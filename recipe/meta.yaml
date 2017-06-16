@@ -31,6 +31,7 @@ requirements:
     - matplotlib
     - h5py
   run:
+    - libgcc
     - libgfortran
     - hdf5 1.8.18|1.8.18.*
     - python >=2.7
