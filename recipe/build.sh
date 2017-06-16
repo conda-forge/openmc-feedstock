@@ -3,6 +3,8 @@ set -x
 set -e
 
 export FC=gfortran
+export CC=gcc
+export CXX=g++
 mkdir -p build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
