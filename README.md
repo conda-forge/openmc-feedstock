@@ -1,7 +1,7 @@
 About openmc
 ============
 
-Home: http://mit-crpg.github.io/openmc/index.html
+Home: http://openmc.readthedocs.io
 
 Package license: MIT
 
