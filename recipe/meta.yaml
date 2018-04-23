@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   detect_binary_files_with_prefix: true
 
@@ -26,17 +26,18 @@ requirements:
     - hdf5 1.8.18|1.8.18.*
     - git
     - setuptools
-    - numpy >=1.9
+    - numpy 1.11.*
     - cython
     - matplotlib
     - h5py
+    - python
   run:
     - libgcc
     - libgfortran
     - hdf5 1.8.18|1.8.18.*
-    - python >=2.7
+    - python
     - six
-    - numpy >=1.9
+    - numpy >=1.11
     - h5py
     - scipy
     - pandas

@@ -19,14 +19,16 @@ used in the MCNP and Serpent Monte Carlo codes.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/openmc-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/openmc-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/openmc-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/openmc-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/openmc-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/openmc-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/openmc-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/openmc-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/openmc/badges/version.svg)](https://anaconda.org/conda-forge/openmc)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/openmc/badges/downloads.svg)](https://anaconda.org/conda-forge/openmc)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-openmc-green.svg)](https://anaconda.org/conda-forge/openmc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openmc.svg)](https://anaconda.org/conda-forge/openmc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openmc.svg)](https://anaconda.org/conda-forge/openmc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openmc.svg)](https://anaconda.org/conda-forge/openmc) |
 
 Installing openmc
 =================
