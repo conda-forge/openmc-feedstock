@@ -19,25 +19,25 @@ build:
 
 requirements:
   build:
-    - toolchain
     - cmake
     - pkg-config
-    - gcc
-    - hdf5 1.8.18|1.8.18.*
+    - {{ compiler('fortran') }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - hdf5
     - git
     - setuptools
-    - numpy 1.11.*
+    - numpy
     - cython
     - matplotlib
     - h5py
     - python
   run:
-    - libgcc
-    - libgfortran
-    - hdf5 1.8.18|1.8.18.*
+    - hdf5
     - python
     - six
-    - numpy >=1.11
+    - {{ pin_compatible('numpy') }}
     - h5py
     - scipy
     - pandas
