@@ -2,7 +2,6 @@
 set -x
 set -e
 
-export FC=gfortran
 mkdir -p build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
