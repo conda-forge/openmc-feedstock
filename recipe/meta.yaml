@@ -1,7 +1,7 @@
 {% set org = "mit-crpg" %}
 {% set name = "openmc" %}
-{% set version = "0.10.0" %}
-{% set sha256 = "3940b229f92ca36ae31504a1fca0dbc772c8812203ede9b233916b9ef6ae5f2c" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "5127dd50dc02212a310a384a169214e6320812b906f5e135299b9202180d9414" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1003
+  number: 0
   skip: true  # [win]
   skip: true  # [osx]
   detect_binary_files_with_prefix: true
