@@ -1,7 +1,7 @@
 About openmc
 ============
 
-Home: http://openmc.readthedocs.io
+Home: https://openmc.org
 
 Package license: MIT
 
@@ -9,11 +9,14 @@ Feedstock license: BSD 3-Clause
 
 Summary: OpenMC Monte Carlo Code
 
-OpenMC is a Monte Carlo particle transport simulation code focused on
-neutron criticality calculations. It is capable of simulating 3D models
-based on constructive solid geometry with second-order surfaces. The
-particle interaction data is based on ACE format cross sections, also
-used in the MCNP and Serpent Monte Carlo codes.
+OpenMC is a community-developed Monte Carlo neutron and photon transport
+simulation code. It is capable of performing fixed source, k-eigenvalue, and
+subcritical multiplication calculations on models built using either a
+constructive solid geometry or CAD representation. OpenMC supports both
+continuous-energy and multigroup transport. The continuous-energy particle
+interaction data is based on a native HDF5 format that can be generated from
+ACE files produced by NJOY. Parallelism is enabled via a hybrid MPI and
+OpenMP programming model.
 
 
 Current build status
@@ -34,13 +37,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_python2.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=master&jobName=linux&configuration=linux_python2.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_python3.6</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=master">
