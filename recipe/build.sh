@@ -2,6 +2,7 @@
 set -x
 set -e
 
+# Build and install executable
 mkdir -p build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
@@ -10,3 +11,7 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
   ..
 make -j "${CPU_COUNT}"
 make install
+cd ..
+
+# Install Python API
+$PYTHON -m pip install . --no-deps -vv
