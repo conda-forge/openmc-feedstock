@@ -13,9 +13,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
-  skip: true  # [osx]
   skip: true  # [py<35]
   detect_binary_files_with_prefix: true
 
