@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '9'
+- '10'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
@@ -11,7 +11,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '9'
+- '10'
 hdf5:
 - 1.10.6
 macos_machine:
@@ -26,3 +26,6 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.8.* *_cpython
+zip_keys:
+- - numpy
+  - python
