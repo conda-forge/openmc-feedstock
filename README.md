@@ -5,7 +5,7 @@ Home: https://openmc.org
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: OpenMC Monte Carlo Code
 
