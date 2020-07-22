@@ -1,7 +1,7 @@
 {% set org = "openmc-dev" %}
 {% set name = "openmc" %}
-{% set version = "0.11.0" %}
-{% set sha256 = "5127dd50dc02212a310a384a169214e6320812b906f5e135299b9202180d9414" %}
+{% set version = "0.12.0" %}
+{% set sha256 = "d55e287289b5e7a621b92eb94d4521c9bbb6525ebfece5a1a4debc0ce28acb81" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win]
   skip: true  # [py<35]
   detect_binary_files_with_prefix: true
@@ -58,7 +58,7 @@ about:
   home: https://openmc.org
   license: MIT
   license_file: LICENSE
-  summary: 'OpenMC Monte Carlo Code'
+  summary: OpenMC Monte Carlo Code
   description: |
     OpenMC is a community-developed Monte Carlo neutron and photon transport
     simulation code. It is capable of performing fixed source, k-eigenvalue, and
