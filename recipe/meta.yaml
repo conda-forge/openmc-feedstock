@@ -1,19 +1,34 @@
 {% set org = "openmc-dev" %}
 {% set name = "openmc" %}
-{% set version = "0.11.0" %}
-{% set sha256 = "5127dd50dc02212a310a384a169214e6320812b906f5e135299b9202180d9414" %}
+{% set version = "0.12.0" %}
+{% set sha256 = "d55e287289b5e7a621b92eb94d4521c9bbb6525ebfece5a1a4debc0ce28acb81" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/{{ org }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  - url: https://github.com/{{ org }}/{{ name }}/archive/v{{ version }}.tar.gz
+    fn: {{ name }}-{{ version }}.tar.gz
+    sha256: {{ sha256 }}
+  - url: https://github.com/zeux/pugixml/archive/41b6ff21c455865bb8ef67c5952b7f895b62bacc.tar.gz
+    sha256: b145725a8eb17081783d3e0b7118ec825140f8972da5ab5e15c1d051810c1a93
+    folder: vendor/pugixml
+  - url: https://github.com/martinmoene/gsl-lite/archive/913e86d49c6a1acca980f4e325378f9dc393493a.tar.gz
+    sha256: 1978f9c6a6c3fffebac174c34d907ad145a5805e01f94b2de433aa5b0e6efdf4
+    folder: vendor/gsl-lite
+  - url: https://github.com/xtensor-stack/xtensor/archive/0.21.3.tar.gz
+    sha256: f63c25cafea4bfc268edb26e6f5004a28a2f689e6a852bb3559c553106c8d6bf
+    folder: vendor/xtensor
+  - url: https://github.com/xtensor-stack/xtl/archive/0.6.13.tar.gz
+    sha256: 12bd628dee4a7a55db79bff5a47fb7d96b1a4dba780fbd5c81c3a15becfdd99c
+    folder: vendor/xtl
+  - url: https://github.com/fmtlib/fmt/archive/65ac626c5856f5aad1f1542e79407a6714357043.tar.gz
+    sha256: 5a2ddaa029977d64783a0abfa6e3f154fad6954b7622199fcbcd845918f40058
+    folder: vendor/fmt
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win]
   skip: true  # [py<35]
   detect_binary_files_with_prefix: true
@@ -52,13 +67,14 @@ test:
   imports:
     - openmc
     - openmc.data
+    - openmc.deplete
     - openmc.lib
 
 about:
   home: https://openmc.org
   license: MIT
   license_file: LICENSE
-  summary: 'OpenMC Monte Carlo Code'
+  summary: OpenMC Monte Carlo Code
   description: |
     OpenMC is a community-developed Monte Carlo neutron and photon transport
     simulation code. It is capable of performing fixed source, k-eigenvalue, and
