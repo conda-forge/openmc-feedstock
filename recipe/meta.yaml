@@ -28,7 +28,7 @@ source:
     folder: vendor/fmt
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   skip: true  # [py<35]
   detect_binary_files_with_prefix: true
