@@ -1,7 +1,7 @@
 {% set org = "openmc-dev" %}
 {% set name = "openmc" %}
-{% set version = "0.12.2" %}
-{% set sha256 = "29ca66d0e7140357d747516807c91cbf1aace0ebc29dfe9650e9da3c2975dd94" %}
+{% set version = "0.13.0" %}
+{% set sha256 = "d8ce9c49b398c3e7d99f24d73f8252c77ec764d9230a25e23798c4c4f3a4fb04" %}
 
 package:
   name: {{ name|lower }}
@@ -28,7 +28,7 @@ source:
     folder: vendor/fmt
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win]
   skip: true  # [py<35]
   detect_binary_files_with_prefix: true
