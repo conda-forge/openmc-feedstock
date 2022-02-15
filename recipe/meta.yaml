@@ -23,8 +23,8 @@ source:
   - url: https://github.com/xtensor-stack/xtl/archive/0.6.13.tar.gz
     sha256: 12bd628dee4a7a55db79bff5a47fb7d96b1a4dba780fbd5c81c3a15becfdd99c
     folder: vendor/xtl
-  - url: https://github.com/fmtlib/fmt/archive/65ac626c5856f5aad1f1542e79407a6714357043.tar.gz
-    sha256: 5a2ddaa029977d64783a0abfa6e3f154fad6954b7622199fcbcd845918f40058
+  - url: https://github.com/fmtlib/fmt/archive/d141cdbeb0fb422a3fb7173b285fd38e0d1772dc.tar.gz
+    sha256: 8d2cb0daccef71cbf3ee8068a845fdd379545acd289873e67c41fdc1b530bfcd
     folder: vendor/fmt
 
 build:
@@ -36,6 +36,7 @@ build:
 requirements:
   build:
     - cmake
+    - make
     - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
@@ -59,6 +60,7 @@ requirements:
     - matplotlib-base
     - lxml
     - uncertainties
+    - setuptools
 
 test:
   commands:
