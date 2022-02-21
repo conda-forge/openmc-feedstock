@@ -48,12 +48,12 @@ requirements:
   build:
     - cmake
     - make
-    - dagmc 3.2.1 # [dagmc == 'dagmc']
+    - dagmc 3.2.1  # [dagmc == 'dagmc']
     - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - dagmc 3.2.1 # [dagmc == 'dagmc']
+    - dagmc 3.2.1  # [dagmc == 'dagmc']
     - hdf5
     - git
     - setuptools
@@ -64,7 +64,7 @@ requirements:
     - h5py
     - python
   run:
-    - dagmc 3.2.1 # [dagmc == 'dagmc']
+    - dagmc 3.2.1  # [dagmc == 'dagmc']
     - hdf5
     - python
     - {{ pin_compatible('numpy') }}
