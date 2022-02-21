@@ -2,6 +2,10 @@
 {% set name = "openmc" %}
 {% set version = "0.13.0" %}
 {% set sha256 = "d8ce9c49b398c3e7d99f24d73f8252c77ec764d9230a25e23798c4c4f3a4fb04" %}
+{% set build = 1 %}
+
+# ensure dagmc is defined (needed for conda-smithy recipe-lint)
+{% set dagmc = dagmc or 'nodagmc' %}
 
 package:
   name: {{ name|lower }}
@@ -28,21 +32,28 @@ source:
     folder: vendor/fmt
 
 build:
-  number: 1
+  number: {{ build }}
   skip: true  # [win]
   skip: true  # [py<35]
   detect_binary_files_with_prefix: true
+
+  # add build string so packages can depend on
+  # dagmc or nodagmc variants explicitly:
+  # `openmc * nodagmc_*` for openmc without dagmc
+  # `openmc * dagmc_*` for openmc with dagmc
+
+  string: {{ dagmc }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ build }}
 
 requirements:
   build:
     - cmake
     - make
-    - dagmc
+    - dagmc # [dagmc == 'dagmc']
     - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - dagmc
+    - dagmc # [dagmc == 'dagmc']
     - hdf5
     - git
     - setuptools
@@ -53,7 +64,7 @@ requirements:
     - h5py
     - python
   run:
-    - dagmc
+    - dagmc # [dagmc == 'dagmc']
     - hdf5
     - python
     - {{ pin_compatible('numpy') }}
@@ -73,7 +84,9 @@ test:
   commands:
     - test -f "${PREFIX}/bin/openmc"
     - openmc --version
-    - pytest -v tests/unit_tests/dagmc/
+    - pwd
+    - ls
+    - pytest -v "${PREFIX}/tests/unit_tests/dagmc/" # [dagmc == 'dagmc']
   imports:
     - openmc
     - openmc.data
