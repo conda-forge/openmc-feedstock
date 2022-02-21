@@ -77,14 +77,9 @@ requirements:
     - setuptools
 
 test:
-  requires:
-    - pytest
-  source_files:
-    - tests/
   commands:
     - test -f "${PREFIX}/bin/openmc"
     - openmc --version
-    - pytest -v tests/unit_tests/dagmc/  # [dagmc == 'dagmc']
   imports:
     - openmc
     - openmc.data
