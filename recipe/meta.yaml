@@ -69,11 +69,11 @@ test:
   requires:
     - pytest
   source_files:
-    - tests/unit_tests/dagmc/
+    - tests/
   commands:
     - test -f "${PREFIX}/bin/openmc"
     - openmc --version
-    - pytest tests/unit_tests/dagmc/
+    - pytest -v tests/unit_tests/dagmc/
   imports:
     - openmc
     - openmc.data
