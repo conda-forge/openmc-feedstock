@@ -1,34 +1,18 @@
 {% set org = "openmc-dev" %}
 {% set name = "openmc" %}
 {% set version = "0.13.0" %}
-{% set sha256 = "d8ce9c49b398c3e7d99f24d73f8252c77ec764d9230a25e23798c4c4f3a4fb04" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  - url: https://github.com/{{ org }}/{{ name }}/archive/v{{ version }}.tar.gz
-    fn: {{ name }}-{{ version }}.tar.gz
-    sha256: {{ sha256 }}
-  - url: https://github.com/zeux/pugixml/archive/41b6ff21c455865bb8ef67c5952b7f895b62bacc.tar.gz
-    sha256: b145725a8eb17081783d3e0b7118ec825140f8972da5ab5e15c1d051810c1a93
-    folder: vendor/pugixml
-  - url: https://github.com/martinmoene/gsl-lite/archive/913e86d49c6a1acca980f4e325378f9dc393493a.tar.gz
-    sha256: 1978f9c6a6c3fffebac174c34d907ad145a5805e01f94b2de433aa5b0e6efdf4
-    folder: vendor/gsl-lite
-  - url: https://github.com/xtensor-stack/xtensor/archive/0.21.3.tar.gz
-    sha256: f63c25cafea4bfc268edb26e6f5004a28a2f689e6a852bb3559c553106c8d6bf
-    folder: vendor/xtensor
-  - url: https://github.com/xtensor-stack/xtl/archive/0.6.13.tar.gz
-    sha256: 12bd628dee4a7a55db79bff5a47fb7d96b1a4dba780fbd5c81c3a15becfdd99c
-    folder: vendor/xtl
-  - url: https://github.com/fmtlib/fmt/archive/d141cdbeb0fb422a3fb7173b285fd38e0d1772dc.tar.gz
-    sha256: 8d2cb0daccef71cbf3ee8068a845fdd379545acd289873e67c41fdc1b530bfcd
-    folder: vendor/fmt
+  git_url: https://github.com/{{ org }}/{{ name }}.git
+  git_rev: v{{ version }}
+  git_depth: 1 # (Defaults to -1/not shallow)
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [py<35]
   detect_binary_files_with_prefix: true
