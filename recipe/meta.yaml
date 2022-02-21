@@ -84,9 +84,7 @@ test:
   commands:
     - test -f "${PREFIX}/bin/openmc"
     - openmc --version
-    - pwd
-    - ls
-    - pytest -v "${PREFIX}/tests/unit_tests/dagmc/"  # [dagmc == 'dagmc']
+    - pytest -v tests/unit_tests/dagmc/  # [dagmc == 'dagmc']
   imports:
     - openmc
     - openmc.data
