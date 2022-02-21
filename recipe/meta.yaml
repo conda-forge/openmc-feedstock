@@ -48,12 +48,12 @@ requirements:
   build:
     - cmake
     - make
-    - dagmc # [dagmc == 'dagmc']
+    - dagmc  # [dagmc == 'dagmc']
     - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - dagmc # [dagmc == 'dagmc']
+    - dagmc  # [dagmc == 'dagmc']
     - hdf5
     - git
     - setuptools
@@ -64,7 +64,7 @@ requirements:
     - h5py
     - python
   run:
-    - dagmc # [dagmc == 'dagmc']
+    - dagmc  # [dagmc == 'dagmc']
     - hdf5
     - python
     - {{ pin_compatible('numpy') }}
@@ -86,7 +86,7 @@ test:
     - openmc --version
     - pwd
     - ls
-    - pytest -v "${PREFIX}/tests/unit_tests/dagmc/" # [dagmc == 'dagmc']
+    - pytest -v "${PREFIX}/tests/unit_tests/dagmc/"  # [dagmc == 'dagmc']
   imports:
     - openmc
     - openmc.data
