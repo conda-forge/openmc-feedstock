@@ -256,4 +256,5 @@ Feedstock Maintainers
 
 * [@paulromano](https://github.com/paulromano/)
 * [@scopatz](https://github.com/scopatz/)
+* [@shimwell](https://github.com/shimwell/)
 
