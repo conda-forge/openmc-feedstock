@@ -13,7 +13,7 @@
 {% endif %}
 
 # define mpi
-{% set mpi = mpi or 'nompi'}
+{% set mpi = mpi or 'nompi' %}
 
 package:
   name: {{ name|lower }}
