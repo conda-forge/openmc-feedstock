@@ -73,6 +73,7 @@ requirements:
   host:
     - dagmc 3.2.1  # [dagmc == 'dagmc']
     - hdf5
+    - hdf5 * {{ mpi_prefix }}_*
     - git
     - setuptools
     - pip
@@ -85,6 +86,7 @@ requirements:
   run:
     - dagmc 3.2.1  # [dagmc == 'dagmc']
     - hdf5
+    - hdf5 * {{ mpi_prefix }}_*
     - python
     - {{ pin_compatible('numpy') }}
     - h5py
