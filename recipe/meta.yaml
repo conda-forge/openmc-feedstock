@@ -2,7 +2,7 @@
 {% set name = "openmc" %}
 {% set version = "0.13.0" %}
 {% set sha256 = "d8ce9c49b398c3e7d99f24d73f8252c77ec764d9230a25e23798c4c4f3a4fb04" %}
-{% set build = 1 %}
+{% set build = 2 %}
 
 # ensure dagmc is defined (needed for conda-smithy recipe-lint)
 {% set dagmc = dagmc or 'nodagmc' %}
@@ -11,6 +11,9 @@
 # prioritize dagmc variant via build number
 {% set build = build + 100 %}
 {% endif %}
+
+# define mpi
+{% set mpi = mpi or 'nompi'}
 
 package:
   name: {{ name|lower }}
@@ -41,13 +44,22 @@ build:
   skip: true  # [win]
   skip: true  # [py<35]
   detect_binary_files_with_prefix: true
+  {% if mpi != 'nompi' %}
+  {% set mpi_prefix = "mpi_" + mpi %}
+  {% else %}
+  {% set mpi_prefix = "nompi" %}
+  {% endif %}
 
   # add build string so packages can depend on
   # dagmc or nodagmc variants explicitly:
   # `openmc * nodagmc_*` for openmc without dagmc
   # `openmc * dagmc_*` for openmc with dagmc
+  # mpi or nompi variants explicitly:
+  # `openmc * mpi_mpich_*` for mpich
+  # `openmc * mpi_*` for any mpi
+  # `openmc * nompi_*` for no mpi
 
-  string: {{ dagmc }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ build }}
+  string: {{ dagmc }}_{{ mpi_prefix }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ build }}
 
 requirements:
   build:
@@ -57,6 +69,7 @@ requirements:
     - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ mpi }}  # [mpi != 'nompi']
   host:
     - dagmc 3.2.1  # [dagmc == 'dagmc']
     - hdf5
@@ -68,6 +81,7 @@ requirements:
     - matplotlib-base
     - h5py
     - python
+    - {{ mpi }}  # [mpi != 'nompi']
   run:
     - dagmc 3.2.1  # [dagmc == 'dagmc']
     - hdf5
@@ -80,6 +94,7 @@ requirements:
     - lxml
     - uncertainties
     - setuptools
+    - {{ mpi }}  # [mpi != 'nompi']
 
 test:
   commands:
