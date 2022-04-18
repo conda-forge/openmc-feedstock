@@ -66,14 +66,14 @@ requirements:
     - cmake
     - make
     - dagmc 3.2.1  # [dagmc == 'dagmc' and mpi == 'nompi']
-    - dagmc * {{ mpi_prefix }} 3.2.1  # [dagmc == 'dagmc' and mpi != 'nompi']
+    - dagmc * {{ mpi_prefix }}_* 3.2.1  # [dagmc == 'dagmc' and mpi != 'nompi']
     - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ mpi }}  # [mpi != 'nompi']
   host:
     - dagmc 3.2.1  # [dagmc == 'dagmc' and mpi == 'nompi']
-    - dagmc * {{ mpi_prefix }} 3.2.1  # [dagmc == 'dagmc' and mpi != 'nompi']
+    - dagmc * {{ mpi_prefix }}_* 3.2.1  # [dagmc == 'dagmc' and mpi != 'nompi']
     - hdf5
     - hdf5 * {{ mpi_prefix }}_*
     - git
@@ -87,7 +87,7 @@ requirements:
     - {{ mpi }}  # [mpi != 'nompi']
   run:
     - dagmc 3.2.1  # [dagmc == 'dagmc' and mpi == 'nompi']
-    - dagmc * {{ mpi_prefix }} 3.2.1  # [dagmc == 'dagmc' and mpi != 'nompi']
+    - dagmc * {{ mpi_prefix }}_* 3.2.1  # [dagmc == 'dagmc' and mpi != 'nompi']
     - hdf5
     - hdf5 * {{ mpi_prefix }}_*
     - python
