@@ -97,6 +97,7 @@ requirements:
     - uncertainties
     - setuptools
     - {{ mpi }}  # [mpi != 'nompi']
+    - openssh  # [mpi == 'openmpi']
 
 test:
   commands:
