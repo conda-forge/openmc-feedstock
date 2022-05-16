@@ -65,7 +65,7 @@ requirements:
   build:
     - cmake
     - make
-    - dagmc * 3.2.1 * {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
+    - dagmc 3.2.1 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
