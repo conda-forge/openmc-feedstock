@@ -84,7 +84,7 @@ requirements:
     - python
     - {{ mpi }}  # [mpi != 'nompi']
   run:
-    - dagmc * 3.2.1 * {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
+    - dagmc 3.2.1 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5
     - hdf5 * {{ mpi_prefix }}_*
     - python
