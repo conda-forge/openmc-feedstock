@@ -13,13 +13,19 @@ cxx_compiler:
 cxx_compiler_version:
 - '12'
 dagmc:
-- dagmc
+- nodagmc
 hdf5:
 - 1.12.1
 macos_machine:
 - x86_64-apple-darwin13.4.0
+mpi:
+- nompi
+mpich:
+- '4'
 numpy:
-- '1.18'
+- '1.19'
+openmpi:
+- '4'
 pin_run_as_build:
   python:
     min_pin: x.x
