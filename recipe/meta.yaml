@@ -80,7 +80,7 @@ requirements:
     - numpy
     - cython
     - matplotlib-base
-    - h5py
+    - h5py * {{ mpi_prefix }}_*
     - python
     - {{ mpi }}  # [mpi != 'nompi']
   run:
@@ -89,7 +89,7 @@ requirements:
     - hdf5 * {{ mpi_prefix }}_*
     - python
     - {{ pin_compatible('numpy') }}
-    - h5py
+    - h5py * {{ mpi_prefix }}_*
     - scipy
     - pandas
     - matplotlib-base
@@ -112,7 +112,7 @@ test:
     - openmc.lib
   requires:
     - pip
-  
+
 
 about:
   home: https://openmc.org
