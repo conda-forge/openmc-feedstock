@@ -99,6 +99,7 @@ requirements:
     - {{ mpi }}  # [mpi != 'nompi']
     - openssh  # [mpi == 'openmpi']
     - ipython
+    - njoy
 
 test:
   commands:
