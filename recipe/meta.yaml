@@ -2,7 +2,7 @@
 {% set name = "openmc" %}
 {% set version = "0.13.0" %}
 {% set sha256 = "d8ce9c49b398c3e7d99f24d73f8252c77ec764d9230a25e23798c4c4f3a4fb04" %}
-{% set build = 4 %}
+{% set build = 5 %}
 
 # ensure dagmc is defined (needed for conda-smithy recipe-lint)
 {% set dagmc = dagmc or 'nodagmc' %}
@@ -99,6 +99,7 @@ requirements:
     - {{ mpi }}  # [mpi != 'nompi']
     - openssh  # [mpi == 'openmpi']
     - ipython
+    - njoy2016
 
 test:
   commands:
