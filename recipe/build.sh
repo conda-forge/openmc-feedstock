@@ -5,10 +5,11 @@ set -e
 export CONFIGURE_ARGS=""
 
 if [[ -n "$dagmc" && "$dagmc" != "nodagmc" ]]; then
-  export CONFIGURE_ARGS="-Ddagmc=ON ${CONFIGURE_ARGS}"
+  export CONFIGURE_ARGS="-DOPENMC_USE_DAGMC=ON ${CONFIGURE_ARGS}"
 fi
 
 if [[ "$mpi" != "nompi" ]]; then
+  export CONFIGURE_ARGS="-DOPENMC_USE_MPI=ON ${CONFIGURE_ARGS}"
   export CONFIGURE_ARGS="-DHDF5_PREFER_PARALLEL=ON ${CONFIGURE_ARGS}"
   export CONFIGURE_ARGS="-DCMAKE_CXX_COMPILER=mpicxx -DCMAKE_C_COMPILER=mpicc ${CONFIGURE_ARGS}"
 fi
