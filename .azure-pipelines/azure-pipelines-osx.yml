@@ -8,9 +8,6 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_dagmcdagmcmpimpichnumpy1.20python3.7.____cpython:
-        CONFIG: osx_64_dagmcdagmcmpimpichnumpy1.20python3.7.____cpython
-        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpimpichnumpy1.20python3.8.____cpython:
         CONFIG: osx_64_dagmcdagmcmpimpichnumpy1.20python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -20,8 +17,8 @@ jobs:
       osx_64_dagmcdagmcmpimpichnumpy1.21python3.10.____cpython:
         CONFIG: osx_64_dagmcdagmcmpimpichnumpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcdagmcmpinompinumpy1.20python3.7.____cpython:
-        CONFIG: osx_64_dagmcdagmcmpinompinumpy1.20python3.7.____cpython
+      osx_64_dagmcdagmcmpimpichnumpy1.23python3.11.____cpython:
+        CONFIG: osx_64_dagmcdagmcmpimpichnumpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpinompinumpy1.20python3.8.____cpython:
         CONFIG: osx_64_dagmcdagmcmpinompinumpy1.20python3.8.____cpython
@@ -32,8 +29,8 @@ jobs:
       osx_64_dagmcdagmcmpinompinumpy1.21python3.10.____cpython:
         CONFIG: osx_64_dagmcdagmcmpinompinumpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcdagmcmpiopenmpinumpy1.20python3.7.____cpython:
-        CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy1.20python3.7.____cpython
+      osx_64_dagmcdagmcmpinompinumpy1.23python3.11.____cpython:
+        CONFIG: osx_64_dagmcdagmcmpinompinumpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpiopenmpinumpy1.20python3.8.____cpython:
         CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy1.20python3.8.____cpython
@@ -44,8 +41,8 @@ jobs:
       osx_64_dagmcdagmcmpiopenmpinumpy1.21python3.10.____cpython:
         CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcnodagmcmpimpichnumpy1.20python3.7.____cpython:
-        CONFIG: osx_64_dagmcnodagmcmpimpichnumpy1.20python3.7.____cpython
+      osx_64_dagmcdagmcmpiopenmpinumpy1.23python3.11.____cpython:
+        CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpimpichnumpy1.20python3.8.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpimpichnumpy1.20python3.8.____cpython
@@ -56,8 +53,8 @@ jobs:
       osx_64_dagmcnodagmcmpimpichnumpy1.21python3.10.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpimpichnumpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcnodagmcmpinompinumpy1.20python3.7.____cpython:
-        CONFIG: osx_64_dagmcnodagmcmpinompinumpy1.20python3.7.____cpython
+      osx_64_dagmcnodagmcmpimpichnumpy1.23python3.11.____cpython:
+        CONFIG: osx_64_dagmcnodagmcmpimpichnumpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpinompinumpy1.20python3.8.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpinompinumpy1.20python3.8.____cpython
@@ -68,8 +65,8 @@ jobs:
       osx_64_dagmcnodagmcmpinompinumpy1.21python3.10.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpinompinumpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcnodagmcmpiopenmpinumpy1.20python3.7.____cpython:
-        CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy1.20python3.7.____cpython
+      osx_64_dagmcnodagmcmpinompinumpy1.23python3.11.____cpython:
+        CONFIG: osx_64_dagmcnodagmcmpinompinumpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpiopenmpinumpy1.20python3.8.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy1.20python3.8.____cpython
@@ -79,6 +76,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpiopenmpinumpy1.21python3.10.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy1.21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcnodagmcmpiopenmpinumpy1.23python3.11.____cpython:
+        CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
