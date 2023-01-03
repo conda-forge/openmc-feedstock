@@ -83,6 +83,7 @@ requirements:
     - h5py * {{ mpi_prefix }}_*
     - python
     - {{ mpi }}  # [mpi != 'nompi']
+    - vtk
   run:
     - dagmc 3.2.2 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5
@@ -100,6 +101,7 @@ requirements:
     - openssh  # [mpi == 'openmpi']
     - ipython
     - njoy2016
+    - vtk
 
 test:
   commands:
