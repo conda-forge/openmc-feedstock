@@ -43,6 +43,7 @@ build:
   number: {{ build }}
   skip: true  # [win]
   skip: true  # [py<35]
+  skip: true  # [py==311]
   detect_binary_files_with_prefix: true
   {% if mpi != 'nompi' %}
   {% set mpi_prefix = "mpi_" + mpi %}
@@ -84,6 +85,7 @@ requirements:
     - h5py * {{ mpi_prefix }}_*
     - python
     - {{ mpi }}  # [mpi != 'nompi']
+    - vtk
   run:
     - dagmc 3.2.2 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5
@@ -102,6 +104,7 @@ requirements:
     - openssh  # [mpi == 'openmpi']
     - ipython
     - njoy2016
+    - vtk
 
 test:
   commands:
