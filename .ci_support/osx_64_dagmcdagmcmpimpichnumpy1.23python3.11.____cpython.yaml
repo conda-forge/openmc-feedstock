@@ -15,7 +15,7 @@ cxx_compiler_version:
 dagmc:
 - dagmc
 hdf5:
-- 1.12.2
+- 1.14.0
 libpng:
 - '1.6'
 macos_machine:

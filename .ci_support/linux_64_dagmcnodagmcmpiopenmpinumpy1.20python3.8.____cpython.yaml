@@ -17,7 +17,7 @@ dagmc:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 hdf5:
-- 1.12.2
+- 1.14.0
 libpng:
 - '1.6'
 mpi:

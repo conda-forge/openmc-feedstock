@@ -1,11 +1,11 @@
-About openmc
-============
+About openmc-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://openmc.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmc-feedstock/blob/main/LICENSE.txt)
 
 Summary: OpenMC Monte Carlo Code
 
