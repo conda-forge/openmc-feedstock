@@ -1,8 +1,8 @@
 {% set org = "openmc-dev" %}
 {% set name = "openmc" %}
-{% set version = "0.13.2" %}
-{% set sha256 = "dcffc95874c893085feb85f3dbc766f260818b0fcc9f16627759eef47c4439be" %}
-{% set build = 2 %}
+{% set version = "0.13.3" %}
+{% set sha256 = "dbdd0f9ee1cbfccfeefcdb7b50e9b9c9d57ffdb76fa0e2bf4144508c2b7f482e" %}
+{% set build = 0 %}
 
 # ensure dagmc is defined (needed for conda-smithy recipe-lint)
 {% set dagmc = dagmc or 'nodagmc' %}
