@@ -25,7 +25,7 @@ mpi:
 mpich:
 - '4'
 numpy:
-- '1.20'
+- '1.21'
 openmpi:
 - '4'
 pin_run_as_build:
