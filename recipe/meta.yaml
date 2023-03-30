@@ -38,6 +38,9 @@ source:
   - url: https://github.com/fmtlib/fmt/archive/d141cdbeb0fb422a3fb7173b285fd38e0d1772dc.tar.gz
     sha256: 8d2cb0daccef71cbf3ee8068a845fdd379545acd289873e67c41fdc1b530bfcd
     folder: vendor/fmt
+  - url: https://github.com/catchorg/Catch2/archive/41990e0fe6274d716134eecfd4d780e976c8fbf5.tar.gz
+    sha256: b0ebde3f264a98bd30c08febc11835f3b0252bfea3146eead5792d9d899fa0fc
+    folder: vendor/Catch2
 
 build:
   number: {{ build }}
