@@ -1,8 +1,8 @@
 {% set org = "openmc-dev" %}
 {% set name = "openmc" %}
-{% set version = "0.13.2" %}
-{% set sha256 = "dcffc95874c893085feb85f3dbc766f260818b0fcc9f16627759eef47c4439be" %}
-{% set build = 2 %}
+{% set version = "0.13.3" %}
+{% set sha256 = "dbdd0f9ee1cbfccfeefcdb7b50e9b9c9d57ffdb76fa0e2bf4144508c2b7f482e" %}
+{% set build = 0 %}
 
 # ensure dagmc is defined (needed for conda-smithy recipe-lint)
 {% set dagmc = dagmc or 'nodagmc' %}
@@ -38,6 +38,9 @@ source:
   - url: https://github.com/fmtlib/fmt/archive/d141cdbeb0fb422a3fb7173b285fd38e0d1772dc.tar.gz
     sha256: 8d2cb0daccef71cbf3ee8068a845fdd379545acd289873e67c41fdc1b530bfcd
     folder: vendor/fmt
+  - url: https://github.com/catchorg/Catch2/archive/41990e0fe6274d716134eecfd4d780e976c8fbf5.tar.gz
+    sha256: b0ebde3f264a98bd30c08febc11835f3b0252bfea3146eead5792d9d899fa0fc
+    folder: vendor/Catch2
 
 build:
   number: {{ build }}
