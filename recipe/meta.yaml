@@ -73,6 +73,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ mpi }}  # [mpi != 'nompi']
+    - libgomp    # [linux]
   host:
     - dagmc 3.2.2 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5
