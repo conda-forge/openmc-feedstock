@@ -2,6 +2,9 @@
 set -x
 set -e
 
+# Use newer C++ features with old SDK (https://conda-forge.org/docs/maintainer/knowledge_base.html#newer-c-features-with-old-sdk)
+export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
+
 export CONFIGURE_ARGS=""
 
 if [[ -n "$dagmc" && "$dagmc" != "nodagmc" ]]; then
