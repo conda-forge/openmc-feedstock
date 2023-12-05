@@ -2,11 +2,10 @@
 set -x
 set -e
 
-export CONFIGURE_ARGS=""
+# Use newer C++ features with old SDK (https://conda-forge.org/docs/maintainer/knowledge_base.html#newer-c-features-with-old-sdk)
+export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 
-if [[ -n "$dagmc" && "$dagmc" != "nodagmc" ]]; then
-  export CONFIGURE_ARGS="-DOPENMC_USE_DAGMC=ON ${CONFIGURE_ARGS}"
-fi
+export CONFIGURE_ARGS=""
 
 if [[ "$mpi" != "nompi" ]]; then
   export CONFIGURE_ARGS="-DOPENMC_USE_MPI=ON ${CONFIGURE_ARGS}"
