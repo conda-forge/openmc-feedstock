@@ -7,10 +7,6 @@ export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 
 export CONFIGURE_ARGS=""
 
-if [[ -n "$dagmc" && "$dagmc" != "nodagmc" ]]; then
-  export CONFIGURE_ARGS="-DOPENMC_USE_DAGMC=ON ${CONFIGURE_ARGS}"
-fi
-
 if [[ "$mpi" != "nompi" ]]; then
   export CONFIGURE_ARGS="-DOPENMC_USE_MPI=ON ${CONFIGURE_ARGS}"
   export CONFIGURE_ARGS="-DHDF5_PREFER_PARALLEL=ON ${CONFIGURE_ARGS}"
