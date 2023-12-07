@@ -2,7 +2,7 @@
 {% set name = "openmc" %}
 {% set version = "0.14.0" %}
 {% set sha256 = "20ac92cc8d37a8c1180ae2df9f1dd1158f188cbf724ae64c9642db6199f3ee3f" %}
-{% set build = 0 %}
+{% set build = 1 %}
 
 # define mpi
 {% set mpi = mpi or 'nompi' %}
