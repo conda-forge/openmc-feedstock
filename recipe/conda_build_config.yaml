@@ -1,3 +1,7 @@
+dagmc:
+  - nodagmc
+  - dagmc
+
 mpi:
   - nompi
   - mpich
