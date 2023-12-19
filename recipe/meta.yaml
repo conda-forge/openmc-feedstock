@@ -7,6 +7,7 @@
 # ensure dagmc is defined (needed for conda-smithy recipe-lint)
 {% set dagmc = dagmc or 'nodagmc' %}
 {% if dagmc == 'dagmc' %}
+
 # prioritize dagmc variant via build number
 {% set build = build + 100 %}
 {% endif %}
