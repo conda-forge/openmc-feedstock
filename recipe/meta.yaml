@@ -4,6 +4,14 @@
 {% set sha256 = "20ac92cc8d37a8c1180ae2df9f1dd1158f188cbf724ae64c9642db6199f3ee3f" %}
 {% set build = 1 %}
 
+# ensure dagmc is defined (needed for conda-smithy recipe-lint)
+{% set dagmc = dagmc or 'nodagmc' %}
+{% if dagmc == 'dagmc' %}
+
+# prioritize dagmc variant via build number
+{% set build = build + 100 %}
+{% endif %}
+
 # define mpi
 {% set mpi = mpi or 'nompi' %}
 
@@ -46,23 +54,28 @@ build:
   {% endif %}
 
   # add build string so packages can depend on
+  # dagmc or nodagmc variants explicitly:
+  # `openmc * nodagmc_*` for openmc without dagmc
+  # `openmc * dagmc_*` for openmc with dagmc
   # mpi or nompi variants explicitly:
   # `openmc * mpi_mpich_*` for mpich
   # `openmc * mpi_*` for any mpi
   # `openmc * nompi_*` for no mpi
 
-  string: {{ mpi_prefix }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ build }}
+  string: {{ dagmc }}_{{ mpi_prefix }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ build }}
 
 requirements:
   build:
     - cmake
     - make
+    - dagmc 3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - pkg-config
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ mpi }}  # [mpi != 'nompi']
     - libgomp    # [linux]
   host:
+    - dagmc 3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5
     - hdf5 * {{ mpi_prefix }}_*
     - libpng
@@ -76,6 +89,7 @@ requirements:
     - python
     - {{ mpi }}  # [mpi != 'nompi']
   run:
+    - dagmc 3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5
     - hdf5 * {{ mpi_prefix }}_*
     - libpng
