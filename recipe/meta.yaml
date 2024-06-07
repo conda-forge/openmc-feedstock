@@ -2,7 +2,7 @@
 {% set name = "openmc" %}
 {% set version = "0.14.0" %}
 {% set sha256 = "20ac92cc8d37a8c1180ae2df9f1dd1158f188cbf724ae64c9642db6199f3ee3f" %}
-{% set build = 1 %}
+{% set build = 2 %}
 
 # ensure dagmc is defined (needed for conda-smithy recipe-lint)
 {% set dagmc = dagmc or 'nodagmc' %}
@@ -71,6 +71,7 @@ requirements:
     - dagmc 3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - pkg-config
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ mpi }}  # [mpi != 'nompi']
     - libgomp    # [linux]
