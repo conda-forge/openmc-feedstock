@@ -8,9 +8,6 @@ jobs:
     vmImage: macOS-12
   strategy:
     matrix:
-      osx_64_dagmcdagmcmpimpichnumpy1.22python3.8.____cpython:
-        CONFIG: osx_64_dagmcdagmcmpimpichnumpy1.22python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpimpichnumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcdagmcmpimpichnumpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -19,12 +16,6 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpimpichnumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcdagmcmpimpichnumpy2.0python3.12.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcdagmcmpimpichnumpy2.0python3.9.____cpython:
-        CONFIG: osx_64_dagmcdagmcmpimpichnumpy2.0python3.9.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcdagmcmpinompinumpy1.22python3.8.____cpython:
-        CONFIG: osx_64_dagmcdagmcmpinompinumpy1.22python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpinompinumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcdagmcmpinompinumpy2.0python3.10.____cpython
@@ -35,12 +26,6 @@ jobs:
       osx_64_dagmcdagmcmpinompinumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcdagmcmpinompinumpy2.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcdagmcmpinompinumpy2.0python3.9.____cpython:
-        CONFIG: osx_64_dagmcdagmcmpinompinumpy2.0python3.9.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcdagmcmpiopenmpinumpy1.22python3.8.____cpython:
-        CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy1.22python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -49,12 +34,6 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.12.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.9.____cpython:
-        CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.9.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcnodagmcmpimpichnumpy1.22python3.8.____cpython:
-        CONFIG: osx_64_dagmcnodagmcmpimpichnumpy1.22python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpimpichnumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpimpichnumpy2.0python3.10.____cpython
@@ -65,12 +44,6 @@ jobs:
       osx_64_dagmcnodagmcmpimpichnumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpimpichnumpy2.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcnodagmcmpimpichnumpy2.0python3.9.____cpython:
-        CONFIG: osx_64_dagmcnodagmcmpimpichnumpy2.0python3.9.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcnodagmcmpinompinumpy1.22python3.8.____cpython:
-        CONFIG: osx_64_dagmcnodagmcmpinompinumpy1.22python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpinompinumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpinompinumpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -79,12 +52,6 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpinompinumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpinompinumpy2.0python3.12.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcnodagmcmpinompinumpy2.0python3.9.____cpython:
-        CONFIG: osx_64_dagmcnodagmcmpinompinumpy2.0python3.9.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcnodagmcmpiopenmpinumpy1.22python3.8.____cpython:
-        CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy1.22python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.10.____cpython
@@ -95,10 +62,6 @@ jobs:
       osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.9.____cpython:
-        CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.9.____cpython
-        UPLOAD_PACKAGES: 'True'
-    maxParallel: 25
   timeoutInMinutes: 360
   variables: {}
 
