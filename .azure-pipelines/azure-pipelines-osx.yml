@@ -5,7 +5,7 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-12
+    vmImage: macOS-13
   strategy:
     matrix:
       osx_64_dagmcdagmcmpimpichnumpy2.0python3.10.____cpython:
@@ -17,6 +17,9 @@ jobs:
       osx_64_dagmcdagmcmpimpichnumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcdagmcmpimpichnumpy2.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcdagmcmpimpichnumpy2python3.13.____cp313:
+        CONFIG: osx_64_dagmcdagmcmpimpichnumpy2python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpinompinumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcdagmcmpinompinumpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -25,6 +28,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpinompinumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcdagmcmpinompinumpy2.0python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcdagmcmpinompinumpy2python3.13.____cp313:
+        CONFIG: osx_64_dagmcdagmcmpinompinumpy2python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.10.____cpython
@@ -35,6 +41,9 @@ jobs:
       osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy2.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcdagmcmpiopenmpinumpy2python3.13.____cp313:
+        CONFIG: osx_64_dagmcdagmcmpiopenmpinumpy2python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpimpichnumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpimpichnumpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -43,6 +52,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpimpichnumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpimpichnumpy2.0python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcnodagmcmpimpichnumpy2python3.13.____cp313:
+        CONFIG: osx_64_dagmcnodagmcmpimpichnumpy2python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpinompinumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpinompinumpy2.0python3.10.____cpython
@@ -53,6 +65,9 @@ jobs:
       osx_64_dagmcnodagmcmpinompinumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpinompinumpy2.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcnodagmcmpinompinumpy2python3.13.____cp313:
+        CONFIG: osx_64_dagmcnodagmcmpinompinumpy2python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.10.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -61,6 +76,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.12.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy2.0python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcnodagmcmpiopenmpinumpy2python3.13.____cp313:
+        CONFIG: osx_64_dagmcnodagmcmpiopenmpinumpy2python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
