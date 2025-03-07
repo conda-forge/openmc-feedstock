@@ -98,6 +98,7 @@ requirements:
     - pandas
     - matplotlib-base
     - lxml
+    - endf
     - uncertainties
     - setuptools
     - {{ mpi }}  # [mpi != 'nompi']
