@@ -23,20 +23,17 @@ source:
   - url: https://github.com/{{ org }}/{{ name }}/archive/v{{ version }}.tar.gz
     fn: {{ name }}-{{ version }}.tar.gz
     sha256: {{ sha256 }}
-  - url: https://github.com/zeux/pugixml/archive/41b6ff21c455865bb8ef67c5952b7f895b62bacc.tar.gz
-    sha256: b145725a8eb17081783d3e0b7118ec825140f8972da5ab5e15c1d051810c1a93
+  - url: https://github.com/zeux/pugixml/archive/v1.15.tar.gz
+    sha256: b39647064d9e28297a34278bfb897092bf33b7c487906ddfc094c9e8868bddcb
     folder: vendor/pugixml
-  - url: https://github.com/martinmoene/gsl-lite/archive/913e86d49c6a1acca980f4e325378f9dc393493a.tar.gz
-    sha256: 1978f9c6a6c3fffebac174c34d907ad145a5805e01f94b2de433aa5b0e6efdf4
-    folder: vendor/gsl-lite
   - url: https://github.com/xtensor-stack/xtensor/archive/0.25.0.tar.gz
     sha256: 32d5d9fd23998c57e746c375a544edf544b74f0a18ad6bc3c38cbba968d5e6c7
     folder: vendor/xtensor
   - url: https://github.com/xtensor-stack/xtl/archive/0.7.7.tar.gz
     sha256: 44fb99fbf5e56af5c43619fc8c29aa58e5fad18f3ba6e7d9c55c111b62df1fbb
     folder: vendor/xtl
-  - url: https://github.com/fmtlib/fmt/archive/d141cdbeb0fb422a3fb7173b285fd38e0d1772dc.tar.gz
-    sha256: 8d2cb0daccef71cbf3ee8068a845fdd379545acd289873e67c41fdc1b530bfcd
+  - url: https://github.com/fmtlib/fmt/archive/11.0.2.tar.gz
+    sha256: 6cb1e6d37bdcb756dbbe59be438790db409cdb4868c66e888d5df9f13f7c027f
     folder: vendor/fmt
   - url: https://github.com/catchorg/Catch2/archive/5a40b2275caa05cf809bf04df848764a9d7df2e2.tar.gz
     sha256: be038aac877893ea0fa02cdb5f24a46db03085b7f053c8b78ef7bd437c8c6c22
@@ -45,7 +42,7 @@ source:
 build:
   number: {{ build }}
   skip: true  # [win]
-  skip: true  # [py<310]
+  skip: true  # [py<311]
   detect_binary_files_with_prefix: true
   {% if mpi != 'nompi' %}
   {% set mpi_prefix = "mpi_" + mpi %}
@@ -70,6 +67,7 @@ requirements:
     - make
     - dagmc 3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - pkg-config
+    - setuptools_scm
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
@@ -82,9 +80,9 @@ requirements:
     - libpng
     - git
     - setuptools
+    - setuptools_scm
     - pip
     - numpy
-    - cython
     - matplotlib-base
     - h5py * {{ mpi_prefix }}_*
     - python
@@ -106,6 +104,7 @@ requirements:
     - openssh  # [mpi == 'openmpi']
     - ipython
     - njoy2016
+    - ncrystal
 
 test:
   commands:
