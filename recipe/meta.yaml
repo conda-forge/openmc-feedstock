@@ -65,7 +65,7 @@ requirements:
   build:
     - cmake
     - make
-    - dagmc 3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
+    - dagmc >=3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - pkg-config
     - setuptools_scm
     - {{ compiler('c') }}
@@ -74,7 +74,7 @@ requirements:
     - {{ mpi }}  # [mpi != 'nompi']
     - libgomp    # [linux]
   host:
-    - dagmc 3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
+    - dagmc >=3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5
     - hdf5 * {{ mpi_prefix }}_*
     - libpng
@@ -88,7 +88,7 @@ requirements:
     - python
     - {{ mpi }}  # [mpi != 'nompi']
   run:
-    - dagmc 3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
+    - dagmc >=3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5
     - hdf5 * {{ mpi_prefix }}_*
     - libpng
