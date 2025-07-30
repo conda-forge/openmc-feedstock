@@ -19,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 dagmc:
-- dagmc
+- nodagmc
 hdf5:
 - 1.14.3
 libpng:
@@ -39,7 +39,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.13.* *_cpython
+- 3.13.* *_cp313
 target_platform:
 - osx-64
 zip_keys:
