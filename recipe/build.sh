@@ -17,6 +17,12 @@ if [[ "$mpi" != "nompi" ]]; then
   export CONFIGURE_ARGS="-DCMAKE_CXX_COMPILER=mpicxx -DCMAKE_C_COMPILER=mpicc ${CONFIGURE_ARGS}"
 fi
 
+# Workaround for newer llvm versions, based on https://github.com/exasmr/openmc/pull/52
+# TODO: Remove when not needed anymore
+if [[ "$(uname -s)" == "Darwin" ]]; then
+  export CXXFLAGS="${CXXFLAGS} -fno-relaxed-template-template-args"
+fi
+
 # Build and install executable
 mkdir -p build
 cd build
