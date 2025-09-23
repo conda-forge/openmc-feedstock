@@ -1,6 +1,6 @@
 dagmc:
   - nodagmc
-  - dagmc
+  - dagmc # [not (osx and arm64)]
 mpi:
   - nompi
   - mpich
