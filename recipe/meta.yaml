@@ -2,7 +2,7 @@
 {% set name = "openmc" %}
 {% set version = "0.15.2" %}
 {% set sha256 = "919b8997a88ad0a378dbdc7f80e6a36746e97c36b4fa67d5ce629580dcddb880" %}
-{% set build = 1 %}
+{% set build = 2 %}
 
 # ensure dagmc is defined (needed for conda-smithy recipe-lint)
 {% set dagmc = dagmc or 'nodagmc' %}
@@ -71,8 +71,11 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - {{ mpi }}  # [mpi != 'nompi']
-    - libgomp    # [linux]
+    - {{ mpi }}   # [mpi != 'nompi']
+    - libgomp     # [linux]
+    # required for cross compilation (https://conda-forge.org/blog/2020/10/29/macos-arm64/):
+    - python      # [build_platform != target_platform]
+    - numpy       # [build_platform != target_platform]
   host:
     - dagmc >=3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5

@@ -5,7 +5,7 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-13
+    vmImage: macOS-15
   strategy:
     matrix:
       osx_64_dagmcdagmcmpimpichpython3.11.____cpython:
@@ -61,6 +61,33 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpiopenmpipython3.13.____cp313:
         CONFIG: osx_64_dagmcnodagmcmpiopenmpipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpimpichpython3.11.____cpython:
+        CONFIG: osx_arm64_mpimpichpython3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpimpichpython3.12.____cpython:
+        CONFIG: osx_arm64_mpimpichpython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpimpichpython3.13.____cp313:
+        CONFIG: osx_arm64_mpimpichpython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpinompipython3.11.____cpython:
+        CONFIG: osx_arm64_mpinompipython3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpinompipython3.12.____cpython:
+        CONFIG: osx_arm64_mpinompipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpinompipython3.13.____cp313:
+        CONFIG: osx_arm64_mpinompipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpiopenmpipython3.11.____cpython:
+        CONFIG: osx_arm64_mpiopenmpipython3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpiopenmpipython3.12.____cpython:
+        CONFIG: osx_arm64_mpiopenmpipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpiopenmpipython3.13.____cp313:
+        CONFIG: osx_arm64_mpiopenmpipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
