@@ -14,7 +14,7 @@ fi
 if [[ "$mpi" != "nompi" ]]; then
   export CONFIGURE_ARGS="-DOPENMC_USE_MPI=ON ${CONFIGURE_ARGS}"
   export CONFIGURE_ARGS="-DHDF5_PREFER_PARALLEL=ON ${CONFIGURE_ARGS}"
-  export CONFIGURE_ARGS="-DCMAKE_CXX_COMPILER=mpicxx -DCMAKE_C_COMPILER=mpicc ${CONFIGURE_ARGS}"
+  export CONFIGURE_ARGS="-DCMAKE_CXX_COMPILER=${BUILD_PREFIX}/bin/mpicxx -DCMAKE_C_COMPILER=${BUILD_PREFIX}/bin/mpicc ${CONFIGURE_ARGS}"
 fi
 
 # Workaround for newer llvm versions, based on https://github.com/exasmr/openmc/pull/52
