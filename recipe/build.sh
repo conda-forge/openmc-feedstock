@@ -23,7 +23,13 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
   export CXXFLAGS="${CXXFLAGS} -fno-relaxed-template-template-args"
 fi
 
+# for cross compilation on arm64
+if [[ "$target_platform" == "oxs-arm64" ]]; then
+  export CONDA_BUILD_CROSS_COMPILATION=1
+fi
+
 # Build and install executable
+export root_dir=`pwd`
 mkdir -p build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
@@ -34,7 +40,7 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
       ..
 make -j "${CPU_COUNT}"
 make install
-cd ..
+cd $root_dir
 
 # Install Python API
 $PYTHON -m pip install . --no-deps -vv

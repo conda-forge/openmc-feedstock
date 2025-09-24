@@ -71,8 +71,11 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - {{ mpi }}  # [mpi != 'nompi']
-    - libgomp    # [linux]
+    - {{ mpi }}   # [mpi != 'nompi']
+    - libgomp     # [linux]
+    # required for cross compilation (https://conda-forge.org/blog/2020/10/29/macos-arm64/):
+    - python      # [build_platform != target_platform]
+    - numpy       # [build_platform != target_platform]
   host:
     - dagmc >=3.2.3 {{ mpi_prefix }}_*  # [dagmc == 'dagmc']
     - hdf5
