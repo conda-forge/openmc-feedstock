@@ -106,6 +106,7 @@ requirements:
     - ipython
     - njoy2016
     - ncrystal
+    - mcpl
 
 test:
   commands:
