@@ -17,6 +17,9 @@ jobs:
       osx_64_dagmcdagmcmpimpichpython3.13.____cp313:
         CONFIG: osx_64_dagmcdagmcmpimpichpython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcdagmcmpimpichpython3.14.____cp314:
+        CONFIG: osx_64_dagmcdagmcmpimpichpython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpinompipython3.11.____cpython:
         CONFIG: osx_64_dagmcdagmcmpinompipython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -25,6 +28,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpinompipython3.13.____cp313:
         CONFIG: osx_64_dagmcdagmcmpinompipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcdagmcmpinompipython3.14.____cp314:
+        CONFIG: osx_64_dagmcdagmcmpinompipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcdagmcmpiopenmpipython3.11.____cpython:
         CONFIG: osx_64_dagmcdagmcmpiopenmpipython3.11.____cpython
@@ -35,6 +41,9 @@ jobs:
       osx_64_dagmcdagmcmpiopenmpipython3.13.____cp313:
         CONFIG: osx_64_dagmcdagmcmpiopenmpipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcdagmcmpiopenmpipython3.14.____cp314:
+        CONFIG: osx_64_dagmcdagmcmpiopenmpipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpimpichpython3.11.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpimpichpython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -43,6 +52,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpimpichpython3.13.____cp313:
         CONFIG: osx_64_dagmcnodagmcmpimpichpython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcnodagmcmpimpichpython3.14.____cp314:
+        CONFIG: osx_64_dagmcnodagmcmpimpichpython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpinompipython3.11.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpinompipython3.11.____cpython
@@ -53,6 +65,9 @@ jobs:
       osx_64_dagmcnodagmcmpinompipython3.13.____cp313:
         CONFIG: osx_64_dagmcnodagmcmpinompipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcnodagmcmpinompipython3.14.____cp314:
+        CONFIG: osx_64_dagmcnodagmcmpinompipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpiopenmpipython3.11.____cpython:
         CONFIG: osx_64_dagmcnodagmcmpiopenmpipython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -61,6 +76,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_dagmcnodagmcmpiopenmpipython3.13.____cp313:
         CONFIG: osx_64_dagmcnodagmcmpiopenmpipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+      osx_64_dagmcnodagmcmpiopenmpipython3.14.____cp314:
+        CONFIG: osx_64_dagmcnodagmcmpiopenmpipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
