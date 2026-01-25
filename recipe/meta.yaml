@@ -1,8 +1,8 @@
 {% set org = "openmc-dev" %}
 {% set name = "openmc" %}
-{% set version = "0.15.2" %}
-{% set sha256 = "919b8997a88ad0a378dbdc7f80e6a36746e97c36b4fa67d5ce629580dcddb880" %}
-{% set build = 2 %}
+{% set version = "0.15.3" %}
+{% set sha256 = "7019d3325cf59b1d1d3176ac85a247e75a1b9efa6ed40bdf0e7178ed4d03b83a" %}
+{% set build = 1 %}
 
 # ensure dagmc is defined (needed for conda-smithy recipe-lint)
 {% set dagmc = dagmc or 'nodagmc' %}
@@ -106,6 +106,7 @@ requirements:
     - ipython
     - njoy2016
     - ncrystal
+    - mcpl
 
 test:
   commands:
