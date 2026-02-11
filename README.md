@@ -3,7 +3,7 @@ About openmc-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmc-feedstock/blob/main/LICENSE.txt)
 
-Home: https://openmc.org
+Home: https://openmc.org/
 
 Package license: MIT
 
@@ -11,7 +11,7 @@ Summary: OpenMC Monte Carlo Code
 
 Development: https://github.com/openmc-dev/openmc
 
-Documentation: https://docs.openmc.org
+Documentation: https://docs.openmc.org/
 
 OpenMC is a community-developed Monte Carlo neutron and photon transport
 simulation code. It is capable of performing fixed source, k-eigenvalue, and
@@ -21,7 +21,6 @@ continuous-energy and multigroup transport. The continuous-energy particle
 interaction data is based on a native HDF5 format that can be generated from
 ACE files produced by NJOY. Parallelism is enabled via a hybrid MPI and
 OpenMP programming model.
-
 
 Current build status
 ====================
@@ -41,255 +40,255 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_dagmcdagmcmpimpichpython3.11.____cpython</td>
+              <td>linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpimpichpython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcdagmcmpimpichpython3.12.____cpython</td>
+              <td>linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpimpichpython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcdagmcmpimpichpython3.13.____cp313</td>
+              <td>linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpimpichpython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcdagmcmpinompipython3.11.____cpython</td>
+              <td>linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpinompipython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcdagmcmpinompipython3.12.____cpython</td>
+              <td>linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpinompipython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcdagmcmpinompipython3.13.____cp313</td>
+              <td>linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpinompipython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcdagmcmpiopenmpipython3.11.____cpython</td>
+              <td>linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpiopenmpipython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcdagmcmpiopenmpipython3.12.____cpython</td>
+              <td>linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpiopenmpipython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcdagmcmpiopenmpipython3.13.____cp313</td>
+              <td>linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpiopenmpipython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcnodagmcmpimpichpython3.11.____cpython</td>
+              <td>linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpimpichpython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcnodagmcmpimpichpython3.12.____cpython</td>
+              <td>linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpimpichpython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcnodagmcmpimpichpython3.13.____cp313</td>
+              <td>linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpimpichpython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcnodagmcmpinompipython3.11.____cpython</td>
+              <td>linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpinompipython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcnodagmcmpinompipython3.12.____cpython</td>
+              <td>linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpinompipython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcnodagmcmpinompipython3.13.____cp313</td>
+              <td>linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpinompipython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcnodagmcmpiopenmpipython3.11.____cpython</td>
+              <td>linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpiopenmpipython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcnodagmcmpiopenmpipython3.12.____cpython</td>
+              <td>linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpiopenmpipython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_dagmcnodagmcmpiopenmpipython3.13.____cp313</td>
+              <td>linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpiopenmpipython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcdagmcmpimpichpython3.11.____cpython</td>
+              <td>osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpimpichpython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcdagmcmpimpichpython3.12.____cpython</td>
+              <td>osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpimpichpython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcdagmcmpimpichpython3.13.____cp313</td>
+              <td>osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpimpichpython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcdagmcmpinompipython3.11.____cpython</td>
+              <td>osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpinompipython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcdagmcmpinompipython3.12.____cpython</td>
+              <td>osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpinompipython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcdagmcmpinompipython3.13.____cp313</td>
+              <td>osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpinompipython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcdagmcmpiopenmpipython3.11.____cpython</td>
+              <td>osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpiopenmpipython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcdagmcmpiopenmpipython3.12.____cpython</td>
+              <td>osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpiopenmpipython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcdagmcmpiopenmpipython3.13.____cp313</td>
+              <td>osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpiopenmpipython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcnodagmcmpimpichpython3.11.____cpython</td>
+              <td>osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpimpichpython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcnodagmcmpimpichpython3.12.____cpython</td>
+              <td>osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpimpichpython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcnodagmcmpimpichpython3.13.____cp313</td>
+              <td>osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpimpichpython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcnodagmcmpinompipython3.11.____cpython</td>
+              <td>osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpinompipython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcnodagmcmpinompipython3.12.____cpython</td>
+              <td>osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpinompipython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcnodagmcmpinompipython3.13.____cp313</td>
+              <td>osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpinompipython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcnodagmcmpiopenmpipython3.11.____cpython</td>
+              <td>osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpiopenmpipython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcnodagmcmpiopenmpipython3.12.____cpython</td>
+              <td>osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpiopenmpipython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_dagmcnodagmcmpiopenmpipython3.13.____cp313</td>
+              <td>osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5658&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpiopenmpipython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/openmc-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr>
