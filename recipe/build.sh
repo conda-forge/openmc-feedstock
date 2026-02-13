@@ -24,17 +24,17 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
 fi
 
 # Build and install executable
-mkdir -p build
-cd build
-cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
+cmake ${CMAKE_ARGS} \
+      -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
       -DCMAKE_INSTALL_LIBDIR=lib \
       -DCMAKE_BUILD_TYPE=Release \
       -DHDF5_ROOT="${PREFIX}" \
       ${CONFIGURE_ARGS} \
-      ..
-make -j "${CPU_COUNT}"
-make install
-cd ..
+      -S . \
+      -B build
+cmake build -LH
+cmake --build build --parallel "${CPU_COUNT}"
+cmake --install build
 
 # Install Python API
-$PYTHON -m pip install . --no-deps -vv
+"${PYTHON}" -m pip install . -vv --no-deps --no-build-isolation

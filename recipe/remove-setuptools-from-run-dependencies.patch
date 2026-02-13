@@ -1,0 +1,26 @@
+From 72f7402fcf85f238146c215b8ca647dac1e0010c Mon Sep 17 00:00:00 2001
+From: Matthew Feickert <matthew.feickert@cern.ch>
+Date: Tue, 10 Feb 2026 23:13:57 -0700
+Subject: [PATCH] FIX: Remove setuptools from run dependencies
+
+* setuptools is not used at runtime and should not be required as a runtime
+  dependency. It is a build time dependency only to provide a build-backend.
+---
+ pyproject.toml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index 2d67e8340..21342155a 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -34,7 +34,6 @@ dependencies = [
+     "pandas",
+     "lxml",
+     "uncertainties",
+-    "setuptools",
+     "endf",
+ ]
+ 
+-- 
+2.52.0
+

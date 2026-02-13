@@ -1,0 +1,158 @@
+schema_version: 1
+
+context:
+  version: "0.15.3"
+  build_number: 2
+
+package:
+  name: "openmc"
+  version: ${{ version }}
+
+source:
+  - url: https://github.com/openmc-dev/openmc/archive/v${{ version }}.tar.gz
+    sha256: 7019d3325cf59b1d1d3176ac85a247e75a1b9efa6ed40bdf0e7178ed4d03b83a
+    patches:
+      - remove-setuptools-from-run-dependencies.patch
+  - url: https://github.com/zeux/pugixml/archive/v1.15.tar.gz
+    sha256: b39647064d9e28297a34278bfb897092bf33b7c487906ddfc094c9e8868bddcb
+    target_directory: vendor/pugixml
+  - url: https://github.com/xtensor-stack/xtensor/archive/0.25.0.tar.gz
+    sha256: 32d5d9fd23998c57e746c375a544edf544b74f0a18ad6bc3c38cbba968d5e6c7
+    target_directory: vendor/xtensor
+  - url: https://github.com/xtensor-stack/xtl/archive/0.7.7.tar.gz
+    sha256: 44fb99fbf5e56af5c43619fc8c29aa58e5fad18f3ba6e7d9c55c111b62df1fbb
+    target_directory: vendor/xtl
+  - url: https://github.com/fmtlib/fmt/archive/11.0.2.tar.gz
+    sha256: 6cb1e6d37bdcb756dbbe59be438790db409cdb4868c66e888d5df9f13f7c027f
+    target_directory: vendor/fmt
+  - url: https://github.com/catchorg/Catch2/archive/5a40b2275caa05cf809bf04df848764a9d7df2e2.tar.gz
+    sha256: be038aac877893ea0fa02cdb5f24a46db03085b7f053c8b78ef7bd437c8c6c22
+    target_directory: vendor/Catch2
+
+build:
+  # add build string so packages can depend on
+  # dagmc or nodagmc variants explicitly:
+  # `openmc * nodagmc_*` for openmc without dagmc
+  # `openmc * dagmc_*` for openmc with dagmc
+  # mpi or nompi variants explicitly:
+  # `openmc * mpi_mpich_*` for mpich
+  # `openmc * mpi_*` for any mpi
+  # `openmc * nompi_*` for no mpi
+  # Need to set build_number both times
+  number: ${{ build_number | int + 100 if dagmc == "dagmc" else build_number }}
+  # c.f. https://rattler-build.prefix.dev/latest/reference/jinja/#extra-filters-for-recipes
+  string: ${{ dagmc }}_${{ mpi_prefix }}_py${{ python | version_to_buildstring }}h${{ hash }}_${{ build_number | int + 100 if dagmc == "dagmc" else build_number }}
+  variant:
+    # prefer 'dagmc' over other variants
+    down_prioritize_variant: ${{ 0 if dagmc == "dagmc" else 1 }}
+  skip:
+    - win
+    - match(python, "<3.11")
+  prefix_detection:
+    ignore_binary_files: true
+
+requirements:
+  build:
+    - cmake
+    - make
+    - if: dagmc == "dagmc"
+      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
+    - pkg-config
+    - setuptools_scm
+    - ${{ compiler("c") }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler("cxx") }}
+    - if: mpi != "nompi"
+      then: mpi [build=${{ mpi }}]
+    - if: linux
+      then: libgomp
+  host:
+    - if: dagmc == "dagmc"
+      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
+    # Repeat of requirements with no constraint and with build variant are to
+    # pick up global pinning (from no constraint)
+    - hdf5
+    - hdf5 [build=${{ mpi_prefix }}_*]
+    - libpng
+    - git
+    - setuptools
+    - setuptools_scm
+    - pip
+    - numpy
+    - matplotlib-base
+    - h5py [build=${{ mpi_prefix }}_*]
+    - python
+    - if: mpi != "nompi"
+      then: mpi [build=${{ mpi }}]
+  run:
+    - if: dagmc == "dagmc"
+      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
+    - hdf5
+    - hdf5 * [build=${{ mpi_prefix }}_*]
+    - libpng
+    - python
+    - h5py * [build=${{ mpi_prefix }}_*]
+    - scipy
+    - pandas
+    - matplotlib-base
+    - lxml
+    - endf
+    - uncertainties
+    - if: mpi != "nompi"
+      then: mpi * [build=${{ mpi }}]
+    - if: mpi == "openmpi"
+      then: openssh
+    - ipython
+    - njoy2016
+    - ncrystal
+    - mcpl
+
+tests:
+  - package_contents:
+      bin:
+        - openmc
+      include:
+        - openmc/*
+      lib:
+        - openmc
+      site_packages:
+        - openmc
+        - openmc.data
+        - openmc.deplete
+        - openmc.lib
+
+  - script:
+      - openmc --version
+
+  - python:
+      imports:
+        - openmc
+        - openmc.data
+        - openmc.deplete
+        - openmc.lib
+      pip_check: true
+
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: OpenMC Monte Carlo Code
+  description: |
+    OpenMC is a community-developed Monte Carlo neutron and photon transport
+    simulation code. It is capable of performing fixed source, k-eigenvalue, and
+    subcritical multiplication calculations on models built using either a
+    constructive solid geometry or CAD representation. OpenMC supports both
+    continuous-energy and multigroup transport. The continuous-energy particle
+    interaction data is based on a native HDF5 format that can be generated from
+    ACE files produced by NJOY. Parallelism is enabled via a hybrid MPI and
+    OpenMP programming model.
+  homepage: https://openmc.org
+  repository: https://github.com/openmc-dev/openmc
+  documentation: https://docs.openmc.org
+
+extra:
+  recipe-maintainers:
+    - scopatz
+    - paulromano
+    - shimwell
+    - kkiesling
+    - pshriwise
