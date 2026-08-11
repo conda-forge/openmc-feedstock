@@ -17,7 +17,7 @@ cxx_compiler_version:
 dagmc:
 - dagmc
 docker_image:
-- quay.io/condaforge/linux-anvil-x86_64:alma9
+- quay.io/condaforge/linux-anvil-x86_64:alma10
 hdf5:
 - 1.14.6
 libpng:
