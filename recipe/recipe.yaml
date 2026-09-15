@@ -47,8 +47,6 @@ requirements:
   build:
     - cmake
     - make
-    - if: dagmc == "dagmc"
-      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
     - pkg-config
     - setuptools_scm
     - ${{ compiler("c") }}
@@ -59,12 +57,19 @@ requirements:
     - if: linux
       then: libgomp
   host:
-    - if: dagmc == "dagmc"
-      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
-    - if: dagmc == "dagmc"
-      then: eigen <5       
     # Repeat of requirements with no constraint and with build variant are to
     # pick up global pinning (from no constraint)
+    - if: dagmc == "dagmc"
+      then:
+        - dagmc
+        - dagmc-${{ mpi }}
+        # The installed openmc/dagmc.h header includes DagMC.hpp, which exposes
+        # Eigen types via MOAB (Matrix3.hpp), so depend on eigen-abi-devel to
+        # get the eigen-abi ABI marker run export. The Eigen 3 pin matching dagmc
+        # is set in variants.yaml.
+        # c.f. https://github.com/conda-forge/eigen-feedstock/blob/main/recipe/README.md
+        # TODO: Move to Eigen v5
+        - eigen-abi-devel
     - hdf5
     - hdf5 [build=${{ mpi_prefix }}_*]
     - libpng
@@ -80,7 +85,9 @@ requirements:
       then: mpi [build=${{ mpi }}]
   run:
     - if: dagmc == "dagmc"
-      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
+      then:
+        - dagmc
+        - dagmc-${{ mpi }}
     - hdf5
     - hdf5 * [build=${{ mpi_prefix }}_*]
     - libpng

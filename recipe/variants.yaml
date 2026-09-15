@@ -12,3 +12,9 @@ mpi_prefix:
   - nompi
   - mpi_mpich
   - mpi_openmpi
+
+# Override the global eigen_abi_devel pin (Eigen 5) to match the Eigen 3 ABI
+# that dagmc and moab are built against.
+# c.f. https://github.com/conda-forge/dagmc-feedstock/blob/main/recipe/recipe.yaml
+eigen_abi_devel:
+  - "3.*"
