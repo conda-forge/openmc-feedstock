@@ -107,6 +107,8 @@ requirements:
     - njoy2016
     - ncrystal
     - mcpl
+  run_exports:
+    - ${{ pin_subpackage("openmc", upper_bound="x.x") }}
 
 
 tests:
