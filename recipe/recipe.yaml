@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   version: "0.16.0"
-  build_number: 0
+  build_number: 1
 
 package:
   name: "openmc"
@@ -60,11 +60,9 @@ requirements:
       then: libgomp
   host:
     - if: dagmc == "dagmc"
-      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
-    - if: dagmc == "dagmc"
-      then: eigen <5       
-    # Repeat of requirements with no constraint and with build variant are to
-    # pick up global pinning (from no constraint)
+      then:
+        - dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
+        - eigen <5
     - hdf5
     - hdf5 [build=${{ mpi_prefix }}_*]
     - libpng
