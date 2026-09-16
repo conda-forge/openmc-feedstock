@@ -30,10 +30,11 @@ build:
   # `openmc * mpi_mpich_*` for mpich
   # `openmc * mpi_*` for any mpi
   # `openmc * nompi_*` for no mpi
-  # Need to set build_number both times
+  # rattler-build exposes the resolved build.number as build_number when
+  # rendering build.string, so only apply the offset here
   number: ${{ build_number | int + 100 if dagmc_variant == "dagmc" else build_number }}
   # c.f. https://rattler-build.prefix.dev/latest/reference/jinja/#extra-filters-for-recipes
-  string: ${{ dagmc_variant }}_${{ mpi_prefix }}_py${{ python | version_to_buildstring }}h${{ hash }}_${{ build_number | int + 100 if dagmc_variant == "dagmc" else build_number }}
+  string: ${{ dagmc_variant }}_${{ mpi_prefix }}_py${{ python | version_to_buildstring }}h${{ hash }}_${{ build_number }}
   variant:
     # prefer 'dagmc' over other variants
     down_prioritize_variant: ${{ 0 if dagmc_variant == "dagmc" else 1 }}
