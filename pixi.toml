@@ -5,7 +5,7 @@
 
 [workspace]
 name = "openmc-feedstock"
-version = "2026.8.9"  # conda-smithy version used to generate this file
+version = "2026.9.10"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/openmc-feedstock"
 authors = ["@conda-forge/openmc"]
 channels = ["conda-forge"]
@@ -37,222 +37,654 @@ description = "List contents of all packages found in rattler-build build direct
 [feature.build.tasks.build]
 cmd = "rattler-build build --recipe recipe"
 description = "Build openmc-feedstock directly (without setup scripts), no particular variant specified"
-[feature.build.tasks."build-linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
-[feature.build.tasks."build-linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
-[feature.build.tasks."build-linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython"
-[feature.build.tasks."build-linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313"
-[feature.build.tasks."build-linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
-[feature.build.tasks."build-linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
-[feature.build.tasks."build-linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
-[feature.build.tasks."build-linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
-[feature.build.tasks."build-linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython"
-[feature.build.tasks."build-linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313"
-[feature.build.tasks."build-linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
-[feature.build.tasks."build-linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
-[feature.build.tasks."build-osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
-[feature.build.tasks."build-osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
-[feature.build.tasks."build-osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.12.____cpython"
-[feature.build.tasks."build-osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmcmpinompimpi_prefixnompipython3.13.____cp313"
-[feature.build.tasks."build-osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
-[feature.build.tasks."build-osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
-[feature.build.tasks."build-osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
-[feature.build.tasks."build-osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
-[feature.build.tasks."build-osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.12.____cpython"
-[feature.build.tasks."build-osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmcmpinompimpi_prefixnompipython3.13.____cp313"
-[feature.build.tasks."build-osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
-[feature.build.tasks."build-osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."debug-osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "Build openmc-feedstock with variant osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
-[feature.build.tasks."inspect-osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
-description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
+[feature.build.tasks."build-linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Build openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform linux-64"
+description = "Debug openmc-feedstock with variant linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant linux_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313"
+[feature.build.tasks."build-osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Build openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml --target-platform osx-64"
+description = "Debug openmc-feedstock with variant osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314.yaml"
+description = "List contents of openmc-feedstock packages built for variant osx_64_dagmcnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314"
 
 [environments]
 build = ["build"]
