@@ -1,7 +1,7 @@
 zip_keys:
 - [mpi, mpi_prefix]
 
-dagmc:
+dagmc_variant:
   - nodagmc
   - dagmc
 mpi:
