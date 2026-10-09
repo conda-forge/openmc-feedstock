@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   version: "0.16.0"
-  build_number: 0
+  build_number: 1
 
 package:
   name: "openmc"
@@ -30,13 +30,14 @@ build:
   # `openmc * mpi_mpich_*` for mpich
   # `openmc * mpi_*` for any mpi
   # `openmc * nompi_*` for no mpi
-  # Need to set build_number both times
-  number: ${{ build_number | int + 100 if dagmc == "dagmc" else build_number }}
+  # rattler-build exposes the resolved build.number as build_number when
+  # rendering build.string, so only apply the offset here
+  number: ${{ build_number | int + 100 if dagmc_variant == "dagmc" else build_number }}
   # c.f. https://rattler-build.prefix.dev/latest/reference/jinja/#extra-filters-for-recipes
-  string: ${{ dagmc }}_${{ mpi_prefix }}_py${{ python | version_to_buildstring }}h${{ hash }}_${{ build_number | int + 100 if dagmc == "dagmc" else build_number }}
+  string: ${{ dagmc_variant }}_${{ mpi_prefix }}_py${{ python | version_to_buildstring }}h${{ hash }}_${{ build_number }}
   variant:
     # prefer 'dagmc' over other variants
-    down_prioritize_variant: ${{ 0 if dagmc == "dagmc" else 1 }}
+    down_prioritize_variant: ${{ 0 if dagmc_variant == "dagmc" else 1 }}
   skip:
     - win
     - match(python, "<3.12")
@@ -47,8 +48,6 @@ requirements:
   build:
     - cmake
     - make
-    - if: dagmc == "dagmc"
-      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
     - pkg-config
     - setuptools_scm
     - ${{ compiler("c") }}
@@ -59,12 +58,19 @@ requirements:
     - if: linux
       then: libgomp
   host:
-    - if: dagmc == "dagmc"
-      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
-    - if: dagmc == "dagmc"
-      then: eigen <5       
     # Repeat of requirements with no constraint and with build variant are to
     # pick up global pinning (from no constraint)
+    - if: dagmc_variant == "dagmc"
+      then:
+        - dagmc
+        - dagmc-${{ mpi }}
+        # The installed openmc/dagmc.h header includes DagMC.hpp, which exposes
+        # Eigen types via MOAB (Matrix3.hpp), so depend on eigen-abi-devel to
+        # get the eigen-abi ABI marker run export. The Eigen 3 pin matching dagmc
+        # is set in variants.yaml.
+        # c.f. https://github.com/conda-forge/eigen-feedstock/blob/main/recipe/README.md
+        # TODO: Move to Eigen v5
+        - eigen-abi-devel
     - hdf5
     - hdf5 [build=${{ mpi_prefix }}_*]
     - libpng
@@ -79,8 +85,10 @@ requirements:
     - if: mpi != "nompi"
       then: mpi [build=${{ mpi }}]
   run:
-    - if: dagmc == "dagmc"
-      then: dagmc >=3.2.3 [build=${{ mpi_prefix }}_*]
+    - if: dagmc_variant == "dagmc"
+      then:
+        - dagmc
+        - dagmc-${{ mpi }}
     - hdf5
     - hdf5 * [build=${{ mpi_prefix }}_*]
     - libpng
@@ -100,6 +108,8 @@ requirements:
     - njoy2016
     - ncrystal
     - mcpl
+  run_exports:
+    - ${{ pin_subpackage("openmc", upper_bound="x.x") }}
 
 
 tests:

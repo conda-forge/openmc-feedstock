@@ -7,7 +7,7 @@ export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 
 export CONFIGURE_ARGS=""
 
-if [[ -n "$dagmc" && "$dagmc" != "nodagmc" ]]; then
+if [[ -n "$dagmc_variant" && "$dagmc_variant" != "nodagmc" ]]; then
   export CONFIGURE_ARGS="-DOPENMC_USE_DAGMC=ON ${CONFIGURE_ARGS}"
 fi
 
