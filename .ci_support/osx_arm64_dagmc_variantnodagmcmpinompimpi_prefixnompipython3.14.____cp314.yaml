@@ -34,6 +34,8 @@ llvm_openmp:
 - '21'
 macos_machine:
 - arm64-apple-darwin20.0.0
+moab:
+- '5.6'
 mpi:
 - nompi
 mpi_prefix:
