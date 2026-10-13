@@ -11,12 +11,10 @@ package:
 source:
   - url: https://github.com/openmc-dev/openmc/archive/v${{ version }}.tar.gz
     sha256: cfdf10f8dc66e652668dbc94501d5ed99b3dfecabc11cf91989a29ba7984654f
-  - url: https://github.com/zeux/pugixml/archive/v1.15.tar.gz
-    sha256: b39647064d9e28297a34278bfb897092bf33b7c487906ddfc094c9e8868bddcb
-    target_directory: vendor/pugixml
-  - url: https://github.com/fmtlib/fmt/archive/11.0.2.tar.gz
-    sha256: 6cb1e6d37bdcb756dbbe59be438790db409cdb4868c66e888d5df9f13f7c027f
-    target_directory: vendor/fmt
+    patches:
+      # TODO: Remove when updating past v0.16.0, as the vendored git submodules
+      # are removed upstream
+      - remove-check-for-vendored-git-submodules.patch
   - url: https://github.com/catchorg/Catch2/archive/5a40b2275caa05cf809bf04df848764a9d7df2e2.tar.gz
     sha256: be038aac877893ea0fa02cdb5f24a46db03085b7f053c8b78ef7bd437c8c6c22
     target_directory: vendor/Catch2
@@ -71,9 +69,11 @@ requirements:
         # c.f. https://github.com/conda-forge/eigen-feedstock/blob/main/recipe/README.md
         # TODO: Move to Eigen v5
         - eigen-abi-devel
+    - fmt
     - hdf5
     - hdf5 [build=${{ mpi_prefix }}_*]
     - libpng
+    - pugixml
     - git
     - setuptools
     - setuptools_scm
