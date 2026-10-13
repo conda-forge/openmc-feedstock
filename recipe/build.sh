@@ -18,11 +18,16 @@ if [[ "$mpi" != "nompi" ]]; then
 fi
 
 # Build and install executable
+#
+# The C++ unit tests are the only use of Catch2, and they are never run or
+# installed by this recipe, so disable them with OPENMC_BUILD_TESTS=OFF instead
+# of providing catch2 as a host requirement.
 cmake ${CMAKE_ARGS} \
       -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
       -DCMAKE_INSTALL_LIBDIR=lib \
       -DCMAKE_BUILD_TYPE=Release \
       -DHDF5_ROOT="${PREFIX}" \
+      -DOPENMC_BUILD_TESTS=OFF \
       ${CONFIGURE_ARGS} \
       -S . \
       -B build

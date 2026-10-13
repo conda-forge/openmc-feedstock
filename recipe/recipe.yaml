@@ -9,15 +9,12 @@ package:
   version: ${{ version }}
 
 source:
-  - url: https://github.com/openmc-dev/openmc/archive/v${{ version }}.tar.gz
-    sha256: cfdf10f8dc66e652668dbc94501d5ed99b3dfecabc11cf91989a29ba7984654f
-    patches:
-      # TODO: Remove when updating past v0.16.0, as the vendored git submodules
-      # are removed upstream
-      - remove-check-for-vendored-git-submodules.patch
-  - url: https://github.com/catchorg/Catch2/archive/5a40b2275caa05cf809bf04df848764a9d7df2e2.tar.gz
-    sha256: be038aac877893ea0fa02cdb5f24a46db03085b7f053c8b78ef7bd437c8c6c22
-    target_directory: vendor/Catch2
+  url: https://github.com/openmc-dev/openmc/archive/v${{ version }}.tar.gz
+  sha256: cfdf10f8dc66e652668dbc94501d5ed99b3dfecabc11cf91989a29ba7984654f
+  patches:
+    # TODO: Remove when updating past v0.16.0, as the vendored git submodules
+    # are removed upstream
+    - remove-check-for-vendored-git-submodules.patch
 
 build:
   # add build string so packages can depend on
