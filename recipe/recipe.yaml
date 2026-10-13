@@ -70,6 +70,9 @@ requirements:
     - hdf5
     - hdf5 [build=${{ mpi_prefix }}_*]
     - libpng
+    # libopenmc links against libomp directly
+    - if: osx
+      then: llvm-openmp
     - pugixml
     - git
     - setuptools
