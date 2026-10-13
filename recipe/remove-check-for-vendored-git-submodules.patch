@@ -1,0 +1,22 @@
+The fmt and pugixml dependencies are provided by conda-forge packages, so the
+vendored git submodules are not downloaded. Remove the check that requires
+them, so that failing to find either dependency is a configure error instead
+of a silent fallback to a vendored copy.
+
+Not needed upstream: the vendored git submodules are removed after v0.16.0.
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -287,12 +287,6 @@
+   endif()
+ endif()
+ 
+-# Check to see if submodules exist (by checking one)
+-if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/vendor/pugixml/CMakeLists.txt")
+-  message(FATAL_ERROR "The git submodules were not downloaded! GIT_SUBMODULE was \
+-    turned off or failed. Please update submodules and try again.")
+-endif()
+-
+ #===============================================================================
+ # pugixml library
+ #===============================================================================
