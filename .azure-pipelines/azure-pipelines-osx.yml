@@ -8,8 +8,8 @@ jobs:
     vmImage: $(VMIMAGE)
   strategy:
     matrix:
-      osx_64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
-        CONFIG: osx_64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython
+      osx_64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -18,8 +18,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
-        CONFIG: osx_64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313
+      osx_64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -28,8 +28,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
-        CONFIG: osx_64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.14.____cp314
+      osx_64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -38,8 +38,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.12.____cpython:
-        CONFIG: osx_64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.12.____cpython
+      osx_64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -48,8 +48,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.13.____cp313:
-        CONFIG: osx_64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.13.____cp313
+      osx_64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -58,8 +58,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.14.____cp314:
-        CONFIG: osx_64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.14.____cp314
+      osx_64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -68,8 +68,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
-        CONFIG: osx_64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
+      osx_64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -78,8 +78,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
-        CONFIG: osx_64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
+      osx_64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -88,8 +88,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
-        CONFIG: osx_64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
+      osx_64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -98,8 +98,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
-        CONFIG: osx_64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython
+      osx_64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -108,8 +108,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
-        CONFIG: osx_64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313
+      osx_64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -118,8 +118,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
-        CONFIG: osx_64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.14.____cp314
+      osx_64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -128,8 +128,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.12.____cpython:
-        CONFIG: osx_64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.12.____cpython
+      osx_64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -138,8 +138,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.13.____cp313:
-        CONFIG: osx_64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.13.____cp313
+      osx_64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -148,8 +148,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.14.____cp314:
-        CONFIG: osx_64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.14.____cp314
+      osx_64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -158,8 +158,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
-        CONFIG: osx_64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
+      osx_64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -168,8 +168,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
-        CONFIG: osx_64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
+      osx_64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -178,8 +178,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
-        CONFIG: osx_64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
+      osx_64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -188,8 +188,188 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
-        CONFIG: osx_arm64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython
+      osx_64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
+        CONFIG: osx_64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
+        CONFIG: osx_64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
+        CONFIG: osx_64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -198,8 +378,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
-        CONFIG: osx_arm64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313
+      osx_arm64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -208,8 +388,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
-        CONFIG: osx_arm64_dagmc_variantdagmcmpimpichmpi_prefixmpi_mpichpython3.14.____cp314
+      osx_arm64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -218,8 +398,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.12.____cpython:
-        CONFIG: osx_arm64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.12.____cpython
+      osx_arm64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -228,8 +408,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.13.____cp313:
-        CONFIG: osx_arm64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.13.____cp313
+      osx_arm64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -238,8 +418,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.14.____cp314:
-        CONFIG: osx_arm64_dagmc_variantdagmcmpinompimpi_prefixnompipython3.14.____cp314
+      osx_arm64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -248,8 +428,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
-        CONFIG: osx_arm64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
+      osx_arm64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -258,8 +438,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
-        CONFIG: osx_arm64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
+      osx_arm64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -268,8 +448,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
-        CONFIG: osx_arm64_dagmc_variantdagmcmpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
+      osx_arm64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -278,8 +458,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
-        CONFIG: osx_arm64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.12.____cpython
+      osx_arm64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -288,8 +468,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
-        CONFIG: osx_arm64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.13.____cp313
+      osx_arm64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -298,8 +478,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
-        CONFIG: osx_arm64_dagmc_variantnodagmcmpimpichmpi_prefixmpi_mpichpython3.14.____cp314
+      osx_arm64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -308,8 +488,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.12.____cpython:
-        CONFIG: osx_arm64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.12.____cpython
+      osx_arm64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -318,8 +498,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.13.____cp313:
-        CONFIG: osx_arm64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.13.____cp313
+      osx_arm64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -328,8 +508,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.14.____cp314:
-        CONFIG: osx_arm64_dagmc_variantnodagmcmpinompimpi_prefixnompipython3.14.____cp314
+      osx_arm64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf52mpinompimpi_prefixnompipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -338,8 +518,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
-        CONFIG: osx_arm64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
+      osx_arm64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -348,8 +528,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
-        CONFIG: osx_arm64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
+      osx_arm64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -358,8 +538,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
-        CONFIG: osx_arm64_dagmc_variantnodagmcmpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
+      osx_arm64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantdagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -368,6 +548,187 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf51.14.6mpimpichmpi_prefixmpi_mpichpython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf51.14.6mpinompimpi_prefixnompipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf51.14.6mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf52mpimpichmpi_prefixmpi_mpichpython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf52mpinompimpi_prefixnompipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314:
+        CONFIG: osx_arm64_dagmc_variantnodagmchdf52mpiopenmpimpi_prefixmpi_openmpipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+    maxParallel: 50
   timeoutInMinutes: 360
   variables: {}
 
