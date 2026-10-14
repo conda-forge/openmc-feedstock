@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   version: "0.16.0"
-  build_number: 1
+  build_number: 2
 
 package:
   name: "openmc"
